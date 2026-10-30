@@ -1,0 +1,11 @@
+{
+  "name": "anat-nails",
+  "private": true,
+  "scripts": {
+    "dev": "http-server . -p 8080 -c-1 -o",
+    "start": "http-server . -p 8080 -c-1 -o"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
