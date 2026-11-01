@@ -19,11 +19,6 @@ window.GALLERY = [
     shape: "tall",
   },
   {
-    src: "images/gallery/01-nail-art-gold.png",
-    alt: "עיצוב ציפורניים בגוון ניוד עם פרט זהב",
-    shape: "portrait",
-  },
-  {
     src: "images/gallery/05-gel-nude.png",
     alt: "לק ג'ל בגוון ניוד אלגנטי בחיפה",
     shape: "portrait",

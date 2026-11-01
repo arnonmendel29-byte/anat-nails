@@ -126,6 +126,28 @@
     reveals.forEach((el) => el.classList.add("is-visible"));
   }
 
+  /* ---------- Process wave ---------- */
+  const processStage = document.querySelector(".process-stage");
+  if (processStage) {
+    const line = processStage.querySelector(".process-wave__line");
+    const reduceProcess = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (line && typeof line.getTotalLength === "function") {
+      const len = Math.ceil(line.getTotalLength());
+      processStage.style.setProperty("--wave-len", String(len));
+    }
+    const playProcess = () => processStage.classList.add("is-live");
+    if (reduceProcess || !("IntersectionObserver" in window)) {
+      playProcess();
+    } else {
+      const processObserver = new IntersectionObserver((entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        playProcess();
+        processObserver.disconnect();
+      }, { threshold: 0.28 });
+      processObserver.observe(processStage);
+    }
+  }
+
   /* ---------- Header state + sticky CTA ---------- */
   const header = document.querySelector(".site-header");
   const navToggle = document.querySelector(".nav-toggle");

@@ -147,6 +147,7 @@
         <a href="#services">שירותים</a>
         <a href="#gallery">עבודות</a>
         <a href="#about">אודות</a>
+        <a href="#process">התהליך</a>
         <a href="#contact">יצירת קשר</a>
       </nav>
       <div class="header-actions">
@@ -296,35 +297,67 @@
       </div>
     </section>
 
+    <!-- ============ PROCESS ============ -->
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head process-head reveal">
+          <p class="eyebrow eyebrow-light">התהליך</p>
+          <h2 id="process-title" class="h2">איך התהליך <em>עם ענת</em> עובד</h2>
+        </header>
+
+        <div class="process-stage">
+          <svg class="process-wave" viewBox="0 0 1000 180" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="process-stroke" x1="1000" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#f6ebe6"/>
+                <stop offset="0.55" stop-color="#e6c3bd"/>
+                <stop offset="1" stop-color="#d8b5a4"/>
+              </linearGradient>
+            </defs>
+            <path class="process-wave__line" fill="none" stroke="url(#process-stroke)" stroke-width="1.5" stroke-linecap="round" vector-effect="non-scaling-stroke" d="M970 46 C 920 28, 890 58, 860 50 C 780 28, 720 140, 640 116 C 540 86, 450 18, 370 62 C 290 104, 200 148, 120 100 C 70 70, 32 88, 16 92"/>
+            <path class="process-wave__comet" fill="none" stroke="#fffdfb" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" d="M970 46 C 920 28, 890 58, 860 50 C 780 28, 720 140, 640 116 C 540 86, 450 18, 370 62 C 290 104, 200 148, 120 100 C 70 70, 32 88, 16 92"/>
+          </svg>
+
+          <ol class="process-steps">
+            <li class="process-step" style="--i:0">
+              <span class="process-node">01</span>
+              <div class="process-copy">
+                <h3>מכינות ומתאימות</h3>
+                <p>שיחה קצרה והבנה של הסגנון, הצבע והמראה שאת רוצה.</p>
+              </div>
+            </li>
+            <li class="process-step" style="--i:1">
+              <span class="process-node">02</span>
+              <div class="process-copy">
+                <h3>מכינות</h3>
+                <p>הכנה יסודית ומדויקת של הציפורן והעור שמסביבה.</p>
+              </div>
+            </li>
+            <li class="process-step" style="--i:2">
+              <span class="process-node">03</span>
+              <div class="process-copy">
+                <h3>בונות ומעצבות</h3>
+                <p>עבודה מדויקת על המבנה, הצורה והפרטים הקטנים.</p>
+              </div>
+            </li>
+            <li class="process-step" style="--i:3">
+              <span class="process-node">04</span>
+              <div class="process-copy">
+                <h3>מסיימות ב־<span lang="en">WOW</span></h3>
+                <p>צבע, גימור והטאצ'ים האחרונים עד שהכול מרגיש מושלם.</p>
+              </div>
+            </li>
+          </ol>
+
+          <p class="process-caption"><span>04</span> התהליך שלך</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ CTA ============ -->
     <section class="cta" id="book" aria-labelledby="cta-title">
       <div class="container cta-inner reveal">
-        <h2 id="cta-title" class="display cta-title">
-          הידיים שלך
-          <span class="cta-title-sub">
-            <em>מחכות לרגע הזה</em>
-            <svg class="cta-draw" aria-hidden="true" viewBox="0 0 360 40" preserveAspectRatio="none">
-              <path
-                class="cta-draw__path"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M 350 11 C 312 7, 286 15, 252 10 Q 220 6, 188 13 T 128 9 Q 96 6, 64 14 C 40 18, 24 11, 10 12"
-              />
-              <path
-                class="cta-draw__path"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.85"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M 298 28 C 268 24, 246 32, 218 27 Q 192 23, 168 30 T 118 26 Q 96 23, 78 29 C 66 32, 56 27, 48 28"
-              />
-            </svg>
-          </span>
-        </h2>
+        <h2 id="cta-title" class="display cta-title">הידיים שלך <em>מחכות לרגע הזה</em></h2>
         <ol class="steps">
           <li><span>1</span>שולחות הודעה בוואטסאפ</li>
           <li><span>2</span>מתאמות יחד שירות ומועד</li>
@@ -397,7 +430,6 @@
   </svg>
 
   <script src="gallery.js"></script>
-  <script src="cta-draw.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>
